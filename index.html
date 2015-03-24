@@ -16,7 +16,7 @@
         color: white;
     }
 
-    .fixedwidth{
+    .fixedwidth {
         width: 1050px;
         margin: 0 auto;
 
@@ -30,16 +30,16 @@
 
     }
 
-    #topmenudiv{
+    #topmenudiv {
         float:left;
     }
 
-    #topmenudiv ul{
+    #topmenudiv ul {
       margin: 0 0 0 200px;
       padding: 0;
     }
 
-    #topmenudiv li{
+    #topmenudiv li {
         list-style: none;
         font-weight: bold;
         font-size: 0.8em;
@@ -49,12 +49,194 @@
         float: left;
     }
 
+    #searchdiv {
+        float: left;
+        padding: 8px;
+    }
+
+    #searchdiv input {
+        height: 17px;
+        border: none;
+        font-size: 0.8em;
+        padding-left: 10px;
+        background-image: url("image/magnify.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    .break {
+        clear:both;
+    }
+
+    #newsbar {
+        background-color: #990000;
+        height: 90px;
+        width: 100%;
+        color: white;
+    }
+
+    #newsbar p {
+        margin: 0;
+        padding: 10px 0 0 0;
+        float: left;
+    }
+
+    #newsheader {
+        font-size: 2.5em;
+
+    }
+
+    #asia {
+        font-size: 0.65em;
+        padding-left: 15px;
+    }
+
+    #rss {
+        margin-top: 30px;
+        float: right;
+        font-size: 0.8em;
+    }
+
+    #rss img {
+        height: 16px;
+        vertical-align: bottom;
+    }
+
+    #topicmenu {
+      margin-top: 10px;
+    }
+
+    #topicmenu ul {
+        background-color: #3E0C0D;
+        padding: 5px 0 0 5px;
+        margin: 0 0 0 0;
+        height: 20px;
+
+    }
+
+    #topicmenu li {
+        list-style: none;
+        font-size: 0.8em;
+        padding: 0 5px 0 5px;
+        border-right: 1px solid #990000;
+        float: left;
+        background-color: none;
+    }
+
+    .selected {
+        background-color: #EDEDED;
+        color: #666666;
+        height: 20px;
+        position: relative;
+        top: -4px;
+        padding-top: 2.5px !important;
+    }
+
+    #content {
+        width: 100%;
+        color: #535353;
+        font-size: 0.75em;
+    }
+
+    .date {
+        font-weight: bold;
+    }
+
+    h1 {
+        color: #1F4F82;
+        font-size: 2.5em;
+    }
+
+    .headlineimg {
+        float:left;
+    }
+
+    .newsitem {
+        position: relative;
+        left: 10px;
+        top: -14px;
+        width: 250px;
+        float: left;
+        font-size: 1.2em;
+    }
+
+    .newsitem a {
+        color: #1F4F82;
+        text-decoration: none;
+    }
+
+    .newsitem a:hover {
+        text-decoration: underline;
+    }
+
+    .video {
+        background-image: url("image/triangle.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 20px;
+    }
+
+    .links {
+        line-height: 1.4em;
+    }
+
+    #feature {
+        background-color: #EEEEEE;
+        float: right;
+        width: 385px;
+        position: relative;
+        top: -80px;
+    }
+
+    h2 {
+      color: #505050;
+      margin: 10px 0 10px 10px;
+      font-size: 1.8em;
+    }
+
+    #feature ul {
+      margin: 0px;
+      padding: 0;
+    }
+
+    #feature li {
+        list-style: none;
+        float: right;
+    }
+
+    #feature img {
+        position: relative;
+        float: left;
+        margin-top: 1px;
+        margin-left: -120px;
+        width: 112px;
+        height: 70px;
+    }
+
+    #feature h5 {
+        position: relative;
+        width: 250px;
+        float: left;
+        margin: 0;
+        font-size: 1.5em;
+        color: #1F4F82;
+        text-decoration: none;
+    }
+
+    #feature p {
+        font-size: 1.2em;
+        width: 250px;
+        margin: 0;
+    }
+
+
     </style>
 
 </head>
 
 <body>
     <div id="container">
+
         <div id="topbar">
 
             <div class="fixedwidth">
@@ -78,7 +260,104 @@
             </div>
 
             <div id="searchdiv">
-                <input type="text" />
+                <input type="text" placeholder="Search"/>
+            </div>
+        </div>
+
+        <div class="break"></div>
+
+        <div id="newsbar">
+
+            <div class="fixedwidth">
+
+              <p id="newsheader">NEWS<spam id="asia">ASIA</spam></p>
+
+              <div id="rss">
+                  RSS <img src="image/rss.png" />
+              </div>
+
+              <div class="break"></div>
+
+              <div id="topicmenu">
+                  <ul>
+                      <li>Home</li>
+                      <li>World</li>
+                      <li class="selected">Asia</li>
+                      <li>Australia</li>
+                      <li>India</li>
+                      <li>China</li>
+                      <li>UK</li>
+                      <li>Business</li>
+                      <li>Health</li>
+                      <li>Science/ Environment</li>
+                      <li>Technology</li>
+                      <li>Entertainment</li>
+                      <li style="border-right: none">Video</li>
+
+                  </ul>
+              </div>
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+
+        <div id="content">
+            <div class="fixedwidth">
+
+                <p><spam class="date">23 March 2015</spam> Last updated at 08:17</p>
+
+                <h1>Singapore mourns founding father</h1>
+
+                <img class="headlineimg" src="image/headlineimg.jpg" />
+
+                <div class="newsitem">
+
+                    <p class="links">Singapore begins seven days of national mourning
+                      following the death of Lee Kuan Yew, founder of the modern city-state. <br />
+
+                    <a href="">Lee Kuan Yew: Asia media</a><br />
+
+                    <a href="">Singaporeans grieve for 'charging lion'</a><br />
+                    <a class="video" href="">'A towering figure'</a><br />
+
+                    <a href="">Obituary: Lee Kuan Yew</a></p>
+
+                </div>
+
+                <div id="feature">
+
+                    <h2>Features and Analysis</h2>
+                    <ul>
+                        <li>
+                          <img class ="mediumimg" src="image/lion.png" />
+                          <h5 class="featuretitle">'Charging lion'</h3>
+                          <p>Singaporeans mourn leader Lee Kuan Yew</p>
+                        </li>
+
+                        <li>
+                          <img class ="mediumimg" src="image/feet.png" />
+                          <h5 class="featuretitle">'Small feet, big lives'</h3>
+                          <p>China's last foot-bound women</p>
+                        </li>
+
+                        <li>
+                          <img class ="mediumimg" src="image/buzz.png" />
+                          <h5 class="featuretitle">'Deadly buzz'</h3>
+                          <p>The cancer legacy of Asia's mind-altering nuts</p>
+                        </li>
+
+                        <li>
+                          <img class ="mediumimg" src="image/friends.png" />
+                          <h5 class="featuretitle">'Best friends'</h3>
+                          <p>Does Ghani visit signals start of better US-Afghan relations?</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
         </div>
 
